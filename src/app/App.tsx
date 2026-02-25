@@ -4,8 +4,34 @@ import { ModuleGrid } from './components/ModuleGrid';
 import { PricingCards } from './components/PricingCards';
 import { ImageCarousel } from './components/ImageCarousel';
 import { ModuleIcons } from './components/ModuleIcons';
+import { FannedCardCarousel } from '@/components/fanned-card-carousel';
 const heroBanner = '/assets/541fa1380bfa098c484dd631a820d9439846629f.webp';
 const deckImage = '/assets/7086af7a1cd7fbaa60dd649af91bc8dba0c82b0f.webp';
+
+const tarotCards = [
+  { name: 'The Fool', image: null },
+  { name: 'The Magician', image: null },
+  { name: 'The High Priestess', image: '/images/tarot/high-priestess.png' },
+  { name: 'The Empress', image: '/images/tarot/empress.png' },
+  { name: 'The Emperor', image: '/images/tarot/emperor.png' },
+  { name: 'The Hierophant', image: '/images/tarot/hierophant.png' },
+  { name: 'The Lovers', image: null },
+  { name: 'The Chariot', image: null },
+  { name: 'Strength', image: '/images/tarot/strength.png' },
+  { name: 'The Hermit', image: null },
+  { name: 'Wheel of Fortune', image: null },
+  { name: 'Justice', image: '/images/tarot/justice.png' },
+  { name: 'The Hanged Man', image: null },
+  { name: 'Death', image: null },
+  { name: 'Temperance', image: '/images/tarot/temperance.png' },
+  { name: 'The Devil', image: null },
+  { name: 'The Tower', image: '/images/tarot/tower.png' },
+  { name: 'The Star', image: null },
+  { name: 'The Moon', image: null },
+  { name: 'The Sun', image: null },
+  { name: 'Judgment', image: '/images/tarot/judgment.png' },
+  { name: 'The World', image: '/images/tarot/world.png' },
+];
 
 export default function App() {
   return (
@@ -524,6 +550,9 @@ export default function App() {
                 <span className="relative z-10">GET YOUR DECK</span>
               </a>
             </motion.div>
+
+            {/* Fanned Card Display */}
+            <FannedCardCarousel cards={tarotCards} />
           </motion.div>
         </section>
 
