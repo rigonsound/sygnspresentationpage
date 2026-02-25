@@ -61,28 +61,28 @@ export function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto px-8 sm:px-12">
+    <div className="relative w-full max-w-7xl mx-auto">
       {/* Custom Navigation Buttons */}
       <button
         onClick={() => sliderRef.current?.slickPrev()}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-1.5 sm:p-2 rounded-full bg-black/60 border border-white/20 active:bg-white/20 hover:bg-white/10 transition-all duration-300"
+        className="absolute -left-1 sm:left-0 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white/70" />
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
       </button>
 
       <button
         onClick={() => sliderRef.current?.slickNext()}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-1.5 sm:p-2 rounded-full bg-black/60 border border-white/20 active:bg-white/20 hover:bg-white/10 transition-all duration-300"
+        className="absolute -right-1 sm:right-0 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white/70" />
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
       </button>
 
       {/* Slider */}
       <Slider ref={sliderRef} {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="px-1.5 sm:px-3">
+          <div key={index} className="px-2 sm:px-3">
             <div className="relative aspect-[9/16] sm:aspect-[9/19] overflow-hidden rounded-lg max-h-[60vh] sm:max-h-none mx-auto">
               <img
                 src={image.src}

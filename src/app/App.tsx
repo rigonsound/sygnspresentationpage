@@ -169,25 +169,17 @@ export default function App() {
                 Consider it an analytical layer between instinct and action. Not prophetic. Not therapeutic. Observational.
               </p>
 
-              <p>
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Daily Focus</strong> identifies what demands attention now.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>The Oracle</strong> exposes cognitive blind spots through symbolic inquiry.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Andromeda</strong> quantifies interpersonal tension and alignment.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Crossroads</strong> isolates binary decisions from emotional interference.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Numbers</strong> traces recurring life architecture through numerological patterns.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Chinese Zodiac</strong> categorizes behavioral default settings.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Stars</strong> positions identity within larger archetypal structures.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Morpheus</strong> translates subconscious imagery into actionable insight.
-                <br />
-                <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Echo</strong> is the connective intelligence. It learns, adapts, remembers.
-              </p>
+              <ul className="space-y-2 list-none p-0 m-0">
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Daily Focus</strong> identifies what demands attention now.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>The Oracle</strong> exposes cognitive blind spots through symbolic inquiry.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Andromeda</strong> quantifies interpersonal tension and alignment.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Crossroads</strong> isolates binary decisions from emotional interference.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Numbers</strong> traces recurring life architecture through numerological patterns.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Chinese Zodiac</strong> categorizes behavioral default settings.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Stars</strong> positions identity within larger archetypal structures.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Morpheus</strong> translates subconscious imagery into actionable insight.</li>
+                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Echo</strong> is the connective intelligence. It learns, adapts, remembers.</li>
+              </ul>
 
               <p>
                 Where other systems optimize for engagement, Echo optimizes for precision. It doesn't amplify what you want to hear. It surfaces what you need to see.
