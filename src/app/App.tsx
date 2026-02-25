@@ -315,8 +315,12 @@ export default function App() {
                 Echo is what makes the system <strong style={{ fontWeight: 500 }}>aware</strong>.
               </p>
 
-              <p style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                 It is the layer that connects everything together.
+              </p>
+
+              <p style={{ color: 'rgba(255, 255, 255, 0.55)' }}>
+                Give it <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.85)' }}>one week</strong>. That's all Echo needs to begin recognizing your patterns.
               </p>
             </motion.div>
           </motion.div>
