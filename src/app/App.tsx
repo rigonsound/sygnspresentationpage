@@ -192,9 +192,6 @@ export default function App() {
                 Simply <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>personalized observation</strong>. An analytical layer between instinct and action.
               </p>
 
-              {/* Divider */}
-              <div className="w-12 h-px mx-auto mb-16" style={{ background: 'rgba(255, 255, 255, 0.15)' }} />
-
               {/* Modules */}
               <div className="space-y-6">
                 <p>
@@ -419,9 +416,6 @@ export default function App() {
               <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>
                 Gradually, the noise around you loses authority.
               </p>
-
-              {/* Divider */}
-              <div className="w-12 h-px mx-auto my-14" style={{ background: 'rgba(255, 255, 255, 0.15)' }} />
 
               <p className="mb-12 text-center" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
                 What remains is the <strong style={{ fontWeight: 500 }}>signal</strong>.
