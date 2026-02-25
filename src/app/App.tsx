@@ -439,35 +439,7 @@ export default function App() {
           </motion.div>
         </section>
 
-        {/* Section 5: Pricing */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            className="w-full max-w-7xl"
-          >
-            {/* Headline */}
-            <h2
-              className="mb-16 text-center px-4"
-              style={{
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: 300,
-                fontSize: 'clamp(1.75rem, 5vw, 3rem)',
-                lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
-                letterSpacing: '-0.02em',
-              }}
-            >
-              Activate Your System
-            </h2>
-
-            <PricingCards />
-          </motion.div>
-        </section>
-
-        {/* Section 6: Get Your Deck */}
+        {/* Section 5: Get Your Deck */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
@@ -552,6 +524,34 @@ export default function App() {
                 <span className="relative z-10">GET YOUR DECK</span>
               </a>
             </motion.div>
+          </motion.div>
+        </section>
+
+        {/* Section 6: Pricing */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="w-full max-w-7xl"
+          >
+            {/* Headline */}
+            <h2
+              className="mb-16 text-center px-4"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: 300,
+                fontSize: 'clamp(1.75rem, 5vw, 3rem)',
+                lineHeight: '1.3',
+                color: 'rgba(255, 255, 255, 0.95)',
+                letterSpacing: '-0.02em',
+              }}
+            >
+              Activate Your System
+            </h2>
+
+            <PricingCards />
           </motion.div>
         </section>
 
