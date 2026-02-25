@@ -33,7 +33,7 @@ export function ImageCarousel() {
     startIndex: 4,
     slidesToScroll: 1,
     containScroll: false,
-    dragFree: false,
+    dragFree: true,
   });
 
   const scrollPrev = useCallback(() => {
