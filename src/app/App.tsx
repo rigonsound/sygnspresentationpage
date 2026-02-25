@@ -17,7 +17,7 @@ export default function App() {
       {/* Content */}
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20">
+        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -141,12 +141,12 @@ export default function App() {
         </section>
 
         {/* Section 2: What It Is */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-center max-w-3xl"
           >
             {/* Body */}
@@ -201,8 +201,8 @@ export default function App() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="mt-20 w-full"
+              viewport={{ once: true, amount: 0.1 }}
+              className="mt-12 sm:mt-20 w-full"
             >
               <ImageCarousel />
             </motion.div>
@@ -210,12 +210,12 @@ export default function App() {
         </section>
 
         {/* Section 3: Module Grid */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.05 }}
             className="w-full max-w-7xl"
           >
             {/* Title */}
@@ -238,12 +238,12 @@ export default function App() {
         </section>
 
         {/* Section 4: How It Works */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-center max-w-3xl"
           >
             {/* Headline */}
@@ -267,7 +267,7 @@ export default function App() {
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontWeight: 300,
-                fontSize: '1.125rem',
+                fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
                 lineHeight: '1.9',
                 color: 'rgba(255, 255, 255, 0.7)',
                 letterSpacing: '0.02em',
@@ -295,12 +295,12 @@ export default function App() {
         </section>
 
         {/* Section 5: Pricing */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="w-full max-w-7xl"
           >
             {/* Headline */}
@@ -323,12 +323,12 @@ export default function App() {
         </section>
 
         {/* Section 6: Get Your Deck */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-center max-w-4xl"
           >
             {/* Headline */}
@@ -351,7 +351,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               className="mb-10"
             >
               <img
@@ -367,7 +367,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               className="mb-10"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -386,7 +386,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               <a
                 href="https://denmarkandwinterstore.myshopify.com/"
@@ -411,12 +411,12 @@ export default function App() {
         </section>
 
         {/* Section 7: Final CTA */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-center max-w-3xl"
           >
             {/* Headline */}
@@ -439,7 +439,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               className="mb-16"
             >
               <img 

@@ -55,7 +55,7 @@ export function PricingCards() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: index * 0.1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {/* Subtle glow effect */}
           <div
@@ -67,7 +67,7 @@ export function PricingCards() {
 
           {/* Card */}
           <div
-            className="relative bg-black/40 backdrop-blur-sm rounded-xl p-12 h-full flex flex-col transition-all duration-500 hover:bg-black/60"
+            className="relative bg-black/40 backdrop-blur-sm rounded-xl p-6 sm:p-12 h-full flex flex-col transition-all duration-500 hover:bg-black/60"
             style={{
               border: `1px solid rgba(255, 255, 255, 0.05)`,
             }}
