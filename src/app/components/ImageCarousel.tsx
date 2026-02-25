@@ -41,6 +41,9 @@ export function ImageCarousel() {
     initialSlide: 4, // Start with dashboard image centered
     autoplay: false,
     arrows: false,
+    swipe: true,
+    swipeToSlide: true,
+    touchThreshold: 10,
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
     responsive: [
       {
@@ -83,7 +86,7 @@ export function ImageCarousel() {
       <Slider ref={sliderRef} {...settings}>
         {images.map((image, index) => (
           <div key={index} className="px-2 sm:px-3">
-            <div className="relative aspect-[9/16] sm:aspect-[9/19] overflow-hidden rounded-lg max-h-[60vh] sm:max-h-none mx-auto">
+            <div className="relative aspect-[9/19] overflow-hidden rounded-lg">
               <img
                 src={image.src}
                 alt={`SYGNS App Screenshot ${index + 1}`}
