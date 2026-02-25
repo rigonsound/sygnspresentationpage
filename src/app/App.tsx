@@ -271,9 +271,9 @@ export default function App() {
               className="mb-10"
             >
               <img
-                src={heroBanner}
-                alt="SYGNS by Denmark+Winter"
-                className="w-full max-w-2xl mx-auto"
+                src="/images/echo-banner.png"
+                alt="Echo"
+                className="w-full max-w-md mx-auto"
                 style={{ opacity: 0.9 }}
               />
             </motion.div>
