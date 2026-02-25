@@ -380,33 +380,68 @@ export default function App() {
 
             {/* Body */}
             <div
-              className="space-y-6 text-left"
+              className="text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontWeight: 300,
                 fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
                 lineHeight: '1.9',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: 'rgba(255, 255, 255, 0.55)',
                 letterSpacing: '0.02em',
               }}
             >
-              <p>
-                The methodology is deceptively simple. Use it daily. Track what resonates. Let the system adapt to your behavioral fingerprint.
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                Most self-reflection tools ask for effort in visible ways. <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Fill this out. Track that.</strong> Sit with your thoughts long enough to prove you're serious about them. Growth becomes something you perform. Insight becomes something you <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>maintain</strong>.
               </p>
 
-              <p>
-                Most people abandon self-reflection tools because they demand performance—journaling as obligation, meditation as discipline. SYGNS removes friction. Open it. Engage with what feels relevant. Close it. The intelligence accumulates passively.
+              <p className="mb-12" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
+                SYGNS takes a quieter approach.
               </p>
 
-              <p style={{ marginTop: '2rem' }}>
-                There are no notifications. No gamification. No streaks to maintain.
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                You open it when something feels off, or when something feels important. You engage with what's relevant. Then you close it and get on with your day.
               </p>
 
-              <p>
-                What you get instead: a gradually refined model of your own decision architecture. The longer you use it, the sharper it becomes at isolating what actually matters versus what merely feels urgent.
+              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
+                <p>No streaks to protect.</p>
+                <p>No reminders pulling at you.</p>
+                <p>No gamified reward for showing up.</p>
+              </div>
+
+              <p className="mb-12" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400 }}>
+                The intelligence accumulates anyway.
               </p>
 
-              <p>You are not being guided. You are being calibrated.</p>
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                Over time, it begins to recognize the shape of your decision-making — what themes repeat, what tensions recur, what feels urgent but <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>rarely matters</strong>. It learns your timing. Your patterns. Your blind spots.
+              </p>
+
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>
+                Gradually, the noise around you loses authority.
+              </p>
+
+              {/* Divider */}
+              <div className="w-12 h-px mx-auto my-14" style={{ background: 'rgba(255, 255, 255, 0.15)' }} />
+
+              <p className="mb-12 text-center" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
+                What remains is the <strong style={{ fontWeight: 500 }}>signal</strong>.
+              </p>
+
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.65)' }}>
+                With SYGNS, you are not being guided or controlled.
+              </p>
+
+              <p className="mb-12" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400 }}>
+                You are being <strong style={{ fontWeight: 500 }}>calibrated</strong>.
+              </p>
+
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                And calibration changes what you choose next.
+              </p>
+
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                Ultimately, you control your own destiny — but sometimes you need clarity on the <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> to choose which path to take.
+              </p>
             </div>
           </motion.div>
         </section>
