@@ -151,41 +151,93 @@ export default function App() {
           >
             {/* Body */}
             <div
-              className="space-y-6 text-left"
+              className="text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontWeight: 300,
                 fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
                 lineHeight: '1.9',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: 'rgba(255, 255, 255, 0.55)',
                 letterSpacing: '0.02em',
               }}
             >
-              <p>
-                Most decision-making tools promise clarity through addition—more data, more options, more frameworks. SYGNS works in reverse. It eliminates variables until only the structural truth remains.
+              {/* Intro */}
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal inner navigation app that integrates symbolic tools with memory to support <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>daily focus and direction</strong>. It helps you make sense of signals over time and decide what to focus on next.
               </p>
 
-              <p>
-                Consider it an analytical layer between instinct and action. Not prophetic. Not therapeutic. Observational.
+              {/* Editorial break */}
+              <div className="my-12 space-y-1" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: '2.2' }}>
+                <p>Most systems promise clarity</p>
+                <p>by adding <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>more</strong>.</p>
+                <p className="pt-4" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More data.</p>
+                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More options.</p>
+                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More interpretation.</p>
+              </div>
+
+              <p className="my-12" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
+                SYGNS removes.
               </p>
 
-              <ul className="space-y-2 list-none p-0 m-0">
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Daily Focus</strong> identifies what demands attention now.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>The Oracle</strong> exposes cognitive blind spots through symbolic inquiry.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Andromeda</strong> quantifies interpersonal tension and alignment.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Crossroads</strong> isolates binary decisions from emotional interference.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Numbers</strong> traces recurring life architecture through numerological patterns.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Chinese Zodiac</strong> categorizes behavioral default settings.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Stars</strong> positions identity within larger archetypal structures.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Morpheus</strong> translates subconscious imagery into actionable insight.</li>
-                <li><strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.9)' }}>Echo</strong> is the connective intelligence. It learns, adapts, remembers.</li>
-              </ul>
-
-              <p>
-                Where other systems optimize for engagement, Echo optimizes for precision. It doesn't amplify what you want to hear. It surfaces what you need to see.
+              <p className="mb-12" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                It subtracts until the structure appears.
               </p>
 
-              <p>This isn't ambient wisdom. It's systematic self-knowledge.</p>
+              <div className="mb-12 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
+                <p>Not prophecy.</p>
+                <p>Not therapy.</p>
+              </div>
+
+              <p className="mb-16" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                Simply <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>personalized observation</strong>. An analytical layer between instinct and action.
+              </p>
+
+              {/* Divider */}
+              <div className="w-12 h-px mx-auto mb-16" style={{ background: 'rgba(255, 255, 255, 0.15)' }} />
+
+              {/* Modules */}
+              <div className="space-y-6">
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Daily Focus</strong>
+                  <br />
+                  <span>Identifies what requires your attention right now.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Oracle</strong>
+                  <br />
+                  <span>Reveals the blind spots through tarot: both traditionally and in a completely modern way.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Andromeda</strong>
+                  <br />
+                  <span>Measures tension and alignment between people.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Crossroads</strong>
+                  <br />
+                  <span>Separates signal from emotional interference when you're feeling stuck.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Numbers</strong>
+                  <br />
+                  <span>Maps recurring life architecture.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Chinese Zodiac</strong>
+                  <br />
+                  <span>Defines behavioral defaults.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Stars</strong>
+                  <br />
+                  <span>Positions identity within larger archetypal systems.</span>
+                </p>
+                <p>
+                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Morpheus</strong>
+                  <br />
+                  <span>Translates subconscious imagery into usable insight by helping you interpret your dreams.</span>
+                </p>
+              </div>
             </div>
 
             {/* Image Carousel */}
