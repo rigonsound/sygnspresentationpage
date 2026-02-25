@@ -347,7 +347,7 @@ export default function App() {
                 letterSpacing: '-0.02em',
               }}
             >
-              All The Sygns™ Modules
+              All The <span style={{ fontFamily: 'Cinzel, serif' }}>{'Sygns\u2122'}</span> Modules
             </h2>
 
             <ModuleGrid />
