@@ -81,12 +81,13 @@ export function ModuleGrid() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 w-full max-w-6xl mx-auto">
       {modules.map((module, index) => {
+        const isActive = hoveredIndex === index || selectedIndex === index;
         return (
           <motion.div
             key={module.name}
             className="module-grid-item relative aspect-square flex flex-col items-center justify-center cursor-pointer gap-3"
             style={{
-              background: hoveredIndex === index 
+              background: isActive
                 ? 'linear-gradient(135deg, rgba(25, 25, 25, 1) 0%, rgba(5, 5, 5, 1) 100%)'
                 : 'linear-gradient(135deg, rgba(15, 15, 15, 1) 0%, rgba(0, 0, 0, 1) 100%)',
               transition: 'background 0.3s ease',
@@ -97,7 +98,7 @@ export function ModuleGrid() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.05 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             {selectedIndex === index ? (
               // Description state - shows text instead of icon/name
