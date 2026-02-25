@@ -253,6 +253,75 @@ export default function App() {
           </motion.div>
         </section>
 
+        {/* Echo Section */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="text-center max-w-4xl"
+          >
+            {/* Banner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.1 }}
+              className="mb-10"
+            >
+              <img
+                src={heroBanner}
+                alt="SYGNS by Denmark+Winter"
+                className="w-full max-w-2xl mx-auto"
+                style={{ opacity: 0.9 }}
+              />
+            </motion.div>
+
+            {/* Echo Text */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: 300,
+                fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
+                lineHeight: '1.9',
+                letterSpacing: '0.02em',
+              }}
+            >
+              <p className="mb-10" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
+                <strong style={{ fontWeight: 500 }}>Echo</strong> is the adaptive memory infrastructure.
+              </p>
+
+              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.55)' }}>
+                <p>It tracks behavior.</p>
+                <p>Learns rhythm.</p>
+                <p>Recognizes recurrence.</p>
+              </div>
+
+              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                Then it returns the signal at the <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>precise moment</strong> it matters.
+              </p>
+
+              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
+                <p>Not reactive.</p>
+                <p>Not random.</p>
+              </div>
+
+              <p className="mb-10" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400 }}>
+                Echo is what makes the system <strong style={{ fontWeight: 500 }}>aware</strong>.
+              </p>
+
+              <p style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                It is the layer that connects everything together.
+              </p>
+            </motion.div>
+          </motion.div>
+        </section>
+
         {/* Section 3: Module Grid */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
