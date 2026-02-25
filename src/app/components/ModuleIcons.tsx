@@ -17,8 +17,7 @@ export function ModuleIcons() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.7 }}
-      className="flex justify-center items-center gap-3 sm:gap-4 max-w-4xl mx-auto overflow-x-auto px-4"
-      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 max-w-4xl mx-auto px-4"
     >
       {icons.map((icon, index) => (
         <motion.div
@@ -26,7 +25,7 @@ export function ModuleIcons() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-          className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"
+          className="w-8 h-8 sm:w-10 sm:h-10"
         >
           <img 
             src={icon} 

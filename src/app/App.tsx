@@ -25,11 +25,11 @@ export default function App() {
             className="text-center max-w-4xl"
           >
             {/* Logo */}
-            <div className="mb-16">
+            <div className="mb-8 sm:mb-16">
               <img 
                 src={heroBanner} 
                 alt="SYGNS by Denmark+Winter"
-                className="w-full max-w-2xl mx-auto"
+                className="w-full max-w-2xl mx-auto px-4"
                 style={{ opacity: 0.95 }}
               />
             </div>
@@ -39,11 +39,11 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="mb-12 px-4"
+              className="mb-6 sm:mb-12 px-4"
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontWeight: 300,
-                fontSize: 'clamp(1.75rem, 5vw, 3rem)',
+                fontSize: 'clamp(1.5rem, 5vw, 3rem)',
                 lineHeight: '1.3',
                 color: 'rgba(255, 255, 255, 0.95)',
                 letterSpacing: '-0.02em',
@@ -57,7 +57,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6"
             >
               {/* Apple App Store Button */}
               <button
@@ -141,7 +141,7 @@ export default function App() {
         </section>
 
         {/* Section 2: What It Is */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
+        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
