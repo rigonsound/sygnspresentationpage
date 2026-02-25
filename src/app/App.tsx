@@ -563,7 +563,11 @@ export default function App() {
             viewport={{ once: true, amount: 0.1 }}
             className="w-full"
           >
-            <FannedCardCarousel cards={tarotCards} />
+            <FannedCardCarousel
+              cards={tarotCards}
+              onCardSelect={() => {}}
+              selectedCards={[]}
+            />
           </motion.div>
         </section>
 
