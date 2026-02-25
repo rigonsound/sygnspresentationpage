@@ -9,7 +9,7 @@ const heroBanner = '/assets/541fa1380bfa098c484dd631a820d9439846629f.webp';
 const deckImage = '/assets/7086af7a1cd7fbaa60dd649af91bc8dba0c82b0f.webp';
 
 const tarotCards = [
-  { name: 'The Fool', image: null },
+  { name: 'The Fool', image: '/images/tarot/fool.png' },
   { name: 'The Magician', image: '/images/tarot/magician.png' },
   { name: 'The High Priestess', image: '/images/tarot/high-priestess.png' },
   { name: 'The Empress', image: '/images/tarot/empress.png' },
@@ -21,7 +21,7 @@ const tarotCards = [
   { name: 'The Hermit', image: '/images/tarot/hermit.png' },
   { name: 'Wheel of Fortune', image: '/images/tarot/wheel-of-fortune.png' },
   { name: 'Justice', image: '/images/tarot/justice.png' },
-  { name: 'The Hanged Man', image: null },
+  { name: 'The Hanged Man', image: '/images/tarot/hanged-man.png' },
   { name: 'Death', image: '/images/tarot/death.png' },
   { name: 'Temperance', image: '/images/tarot/temperance.png' },
   { name: 'The Devil', image: '/images/tarot/devil.png' },
@@ -551,7 +551,18 @@ export default function App() {
               </a>
             </motion.div>
 
-            {/* Fanned Card Display */}
+          </motion.div>
+        </section>
+
+        {/* Fanned Card Display */}
+        <section className="flex flex-col items-center justify-center px-4 py-16 sm:py-24 overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="w-full"
+          >
             <FannedCardCarousel cards={tarotCards} />
           </motion.div>
         </section>
