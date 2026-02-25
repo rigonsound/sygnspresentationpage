@@ -56,7 +56,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-14"
             >
               {/* Apple App Store Button */}
               <button
