@@ -4,7 +4,6 @@ import { ModuleGrid } from './components/ModuleGrid';
 import { PricingCards } from './components/PricingCards';
 import { ImageCarousel } from './components/ImageCarousel';
 import { ModuleIcons } from './components/ModuleIcons';
-import { Apple } from 'lucide-react';
 const heroBanner = '/assets/541fa1380bfa098c484dd631a820d9439846629f.webp';
 const deckImage = '/assets/7086af7a1cd7fbaa60dd649af91bc8dba0c82b0f.webp';
 
@@ -68,7 +67,7 @@ export default function App() {
                   background: 'rgba(0, 0, 0, 0.4)',
                 }}
               >
-                <Apple size={28} strokeWidth={1.5} />
+                <img src="/images/apple-logo.png" alt="Apple" className="w-7 h-7" />
                 <div className="text-left">
                   <div
                     style={{
