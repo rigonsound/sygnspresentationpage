@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -34,6 +34,7 @@ export function ImageCarousel() {
     slidesToScroll: 1,
     containScroll: false,
     dragFree: true,
+    skipSnaps: true,
   });
 
   const scrollPrev = useCallback(() => {
@@ -49,7 +50,7 @@ export function ImageCarousel() {
       {/* Navigation Buttons */}
       <button
         onClick={scrollPrev}
-        className="absolute -left-1 sm:left-0 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
+        className="absolute left-1 sm:left-0 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
         aria-label="Previous slide"
       >
         <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -57,25 +58,30 @@ export function ImageCarousel() {
 
       <button
         onClick={scrollNext}
-        className="absolute -right-1 sm:right-0 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
+        className="absolute right-1 sm:right-0 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/15 border border-white/30 active:bg-white/30 hover:bg-white/20 transition-all duration-300"
         aria-label="Next slide"
       >
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
       </button>
 
-      {/* Carousel */}
-      <div className="overflow-hidden mx-8 sm:mx-10" ref={emblaRef}>
-        <div className="flex">
+      {/* Embla Viewport */}
+      <div
+        className="overflow-hidden cursor-grab active:cursor-grabbing"
+        ref={emblaRef}
+        style={{ touchAction: 'pan-y pinch-zoom' }}
+      >
+        <div className="flex" style={{ backfaceVisibility: 'hidden' }}>
           {images.map((src, index) => (
             <div
               key={index}
-              className="flex-[0_0_90%] sm:flex-[0_0_33.333%] lg:flex-[0_0_20%] min-w-0 px-1.5 sm:px-2"
+              className="flex-[0_0_80%] sm:flex-[0_0_33.333%] lg:flex-[0_0_20%] min-w-0 pl-3 sm:pl-4"
             >
               <div className="relative aspect-[9/19] overflow-hidden rounded-lg">
                 <img
                   src={src}
                   alt={`SYGNS App Screenshot ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover select-none pointer-events-none"
+                  draggable={false}
                 />
                 <div
                   className="absolute inset-0 rounded-lg pointer-events-none"
