@@ -162,33 +162,7 @@ export default function App() {
             >
               {/* Intro */}
               <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
-                <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal inner navigation app that integrates symbolic tools with memory to support <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>daily focus and direction</strong>. It helps you make sense of signals over time and decide what to focus on next.
-              </p>
-
-              {/* Editorial break */}
-              <div className="my-12 space-y-1" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: '2.2' }}>
-                <p>Most systems promise clarity</p>
-                <p>by adding <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>more</strong>.</p>
-                <p className="pt-4" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More data.</p>
-                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More options.</p>
-                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More interpretation.</p>
-              </div>
-
-              <p className="my-12" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
-                SYGNS removes.
-              </p>
-
-              <p className="mb-12" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-                It subtracts until the structure appears.
-              </p>
-
-              <div className="mb-12 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
-                <p>Not prophecy.</p>
-                <p>Not therapy.</p>
-              </div>
-
-              <p className="mb-16" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
-                Simply <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>personalized observation</strong>. An analytical layer between instinct and action.
+                <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal guidance app that helps you read life's signals and focus on what matters next.
               </p>
 
               {/* Modules */}
