@@ -140,7 +140,7 @@ export default function App() {
         </section>
 
         {/* Section 2: What It Is */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-16 sm:py-32">
+        <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-16">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -172,7 +172,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true, amount: 0.1 }}
-              className="mt-12 sm:mt-20 w-full"
+              className="mt-4 sm:mt-6 w-full"
             >
               <ImageCarousel />
             </motion.div>
