@@ -434,7 +434,7 @@ export default function App() {
                 letterSpacing: '-0.02em',
               }}
             >
-              The system is here
+              Read the signal
             </h2>
 
             {/* Logo */}
