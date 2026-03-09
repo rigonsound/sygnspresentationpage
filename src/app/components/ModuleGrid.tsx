@@ -22,55 +22,55 @@ const modules: Module[] = [
     name: 'Daily Focus', 
     color: '#60A5FA', 
     icon: dailyFocusIcon,
-    description: 'A single interpretive lens for the day ahead. Not a to-do list—a thematic anchor. What energy you\'re working with, what requires conscious attention, where friction might surface.'
+    description: 'Your numbers and zodiac are saved the first time you use the app. From there, SYGNS weaves together your dreams, journal entries, and Oracle reflections to highlight what deserves your attention today.'
   },
   { 
     name: 'The Oracle', 
     color: '#A78BFA', 
     icon: oracleIcon,
-    description: 'Tarot Re:Imagined.\n\nBuilt around The Oracle Tarot Re:Imagined deck, this system works through structured spreads and contextual interpretation to deliver a clear answer — along with the narrative reasoning behind it.\n\nAncient archetypes.\nRefined structure.\nClarity.'
+    description: 'A guided, tarot card based experience designed to help you pause, reflect, and choose your next step with clarity. Explore it three ways: Capsule, Deck, or Crossroads.'
   },
   { 
     name: 'Andromeda', 
     color: '#F472B6', 
     icon: andromedaIcon,
-    description: 'Relational analysis interface. Measures compatibility, tension points, and communication gaps between two people. Not romantic advice—structural assessment of how two personalities interface.'
+    description: 'A guided reflection space for complicated relationships. Romantic, platonic, familial, or somewhere in between. If something feels off but you can\'t quite name it, Andromeda helps you slow down and see the situation more clearly.'
   },
   { 
     name: 'Two Paths', 
     color: '#FB923C', 
     icon: twoPathsIcon,
-    description: 'Binary decision clarifier. When you\'re stuck between two choices, this isolates the core trade-off. Strips away justification and reveals which path aligns with your actual priorities versus your stated ones.'
+    description: 'When you\'re wondering if you and someone else are truly meant to move forward together, this helps you see whether your paths actually align.'
   },
   { 
     name: 'Numbers', 
     color: '#4ADE80', 
     icon: numbersIcon,
-    description: 'Numerological pattern recognition. Identifies recurring cycles in your life through birth date and name analysis. Less predictive, more diagnostic—shows you the architecture you keep building.'
+    description: 'Uses your birth date and name to reveal the patterns that tend to repeat in your life. Less about prediction. More about recognizing the cycles you naturally create.'
   },
   { 
     name: 'Chinese Zodiac', 
     color: '#EF4444', 
     icon: zodiacIcon,
-    description: 'Behavioral archetype framework. Twelve categories of instinctive response patterns. Not personality typing—baseline operating instructions. How you approach conflict, ambition, relationships by default.'
+    description: 'Your Chinese zodiac sign reveals your instinctive approach to life; how you tend to handle conflict, ambition, and relationships.'
   },
   { 
     name: 'Stars', 
     color: '#818CF8', 
     icon: starsIcon,
-    description: 'Astrological positioning system. Birth chart analysis that focuses on structural dynamics, not predictions. Where you experience resistance, where energy flows naturally, what you\'re optimized for.'
+    description: 'Your birth chart, read as a map of energy. Where things flow naturally, where resistance appears, and what you\'re built for.'
   },
   { 
     name: 'Echo Journaling', 
     color: '#2DD4BF', 
     icon: echoIcon,
-    description: 'Adaptive memory intelligence. Tracks your usage patterns, learns which modules resonate when, surfaces relevant insights at optimal moments. The connective tissue between all other systems.'
+    description: 'Your journal learns with you. Over time it notices patterns, connects ideas across entries, and surfaces insights when they matter most.'
   },
   { 
     name: 'Morpheus', 
     color: '#C084FC', 
     icon: morpheusIcon,
-    description: 'Dream symbolism decoder. You input dream imagery, it translates subconscious signals into conscious language. Pattern detection for what your mind processes while you\'re offline.'
+    description: 'A place to record and interpret your dreams. Each entry is saved with the date so you can revisit them and notice patterns as they unfold over time.'
   },
 ];
 
