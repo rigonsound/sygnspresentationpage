@@ -164,50 +164,6 @@ export default function App() {
               <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
                 <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal guidance app that helps you read life's signals and focus on what matters next.
               </p>
-
-              {/* Modules */}
-              <div className="space-y-6">
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Daily Focus</strong>
-                  <br />
-                  <span>Identifies what requires your attention right now.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Oracle</strong>
-                  <br />
-                  <span>Reveals the blind spots through tarot: both traditionally and in a completely modern way.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Andromeda</strong>
-                  <br />
-                  <span>Measures tension and alignment between people.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Crossroads</strong>
-                  <br />
-                  <span>Separates signal from emotional interference when you're feeling stuck.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Numbers</strong>
-                  <br />
-                  <span>Maps recurring life architecture.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Chinese Zodiac</strong>
-                  <br />
-                  <span>Defines behavioral defaults.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Stars</strong>
-                  <br />
-                  <span>Positions identity within larger archetypal systems.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Morpheus</strong>
-                  <br />
-                  <span>Translates subconscious imagery into usable insight by helping you interpret your dreams.</span>
-                </p>
-              </div>
             </div>
 
             {/* Image Carousel */}
