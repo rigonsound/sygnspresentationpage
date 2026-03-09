@@ -4,34 +4,8 @@ import { ModuleGrid } from './components/ModuleGrid';
 import { PricingCards } from './components/PricingCards';
 import { ImageCarousel } from './components/ImageCarousel';
 import { ModuleIcons } from './components/ModuleIcons';
-
 const heroBanner = '/assets/541fa1380bfa098c484dd631a820d9439846629f.webp';
 const deckImage = '/assets/7086af7a1cd7fbaa60dd649af91bc8dba0c82b0f.webp';
-
-const tarotCards = [
-  { name: 'The Fool', image: '/images/tarot/fool.png' },
-  { name: 'The Magician', image: '/images/tarot/magician.png' },
-  { name: 'The High Priestess', image: '/images/tarot/high-priestess.png' },
-  { name: 'The Empress', image: '/images/tarot/empress.png' },
-  { name: 'The Emperor', image: '/images/tarot/emperor.png' },
-  { name: 'The Hierophant', image: '/images/tarot/hierophant.png' },
-  { name: 'The Lovers', image: '/images/tarot/lovers.png' },
-  { name: 'The Chariot', image: '/images/tarot/chariot.png' },
-  { name: 'Strength', image: '/images/tarot/strength.png' },
-  { name: 'The Hermit', image: '/images/tarot/hermit.png' },
-  { name: 'Wheel of Fortune', image: '/images/tarot/wheel-of-fortune.png' },
-  { name: 'Justice', image: '/images/tarot/justice.png' },
-  { name: 'The Hanged Man', image: '/images/tarot/hanged-man.png' },
-  { name: 'Death', image: '/images/tarot/death.png' },
-  { name: 'Temperance', image: '/images/tarot/temperance.png' },
-  { name: 'The Devil', image: '/images/tarot/devil.png' },
-  { name: 'The Tower', image: '/images/tarot/tower.png' },
-  { name: 'The Star', image: '/images/tarot/star.png' },
-  { name: 'The Moon', image: '/images/tarot/moon.png' },
-  { name: 'The Sun', image: '/images/tarot/sun.png' },
-  { name: 'Judgment', image: '/images/tarot/judgment.png' },
-  { name: 'The World', image: '/images/tarot/world.png' },
-];
 
 export default function App() {
   return (
