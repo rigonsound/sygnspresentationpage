@@ -4,7 +4,6 @@ import { ModuleGrid } from './components/ModuleGrid';
 import { PricingCards } from './components/PricingCards';
 import { ImageCarousel } from './components/ImageCarousel';
 import { ModuleIcons } from './components/ModuleIcons';
-import { FannedCardCarousel } from './components/fanned-card-carousel';
 
 const heroBanner = '/assets/541fa1380bfa098c484dd631a820d9439846629f.webp';
 const deckImage = '/assets/7086af7a1cd7fbaa60dd649af91bc8dba0c82b0f.webp';
@@ -409,23 +408,6 @@ export default function App() {
                 <span className="relative z-10">GET YOUR DECK</span>
               </a>
             </motion.div>
-          </motion.div>
-        </section>
-
-        {/* Fanned Card Display */}
-        <section className="flex flex-col items-center justify-center px-4 py-16 sm:py-24 overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            className="w-full"
-          >
-            <FannedCardCarousel
-              cards={tarotCards}
-              onCardSelect={() => {}}
-              selectedCards={[]}
-            />
           </motion.div>
         </section>
 
