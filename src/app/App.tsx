@@ -140,7 +140,7 @@ export default function App() {
         </section>
 
         {/* Section 2: What It Is */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-16 sm:py-32">
+        <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-16">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -162,78 +162,8 @@ export default function App() {
             >
               {/* Intro */}
               <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
-                <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal inner navigation app that integrates symbolic tools with memory to support <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>daily focus and direction</strong>. It helps you make sense of signals over time and decide what to focus on next.
+                <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>SYGNS</strong> is a personal guidance app that helps you read life's signals and focus on what matters next.
               </p>
-
-              {/* Editorial break */}
-              <div className="my-12 space-y-1" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: '2.2' }}>
-                <p>Most systems promise clarity</p>
-                <p>by adding <strong style={{ fontWeight: 400, color: 'rgba(255, 255, 255, 0.85)' }}>more</strong>.</p>
-                <p className="pt-4" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More data.</p>
-                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More options.</p>
-                <p style={{ color: 'rgba(255, 255, 255, 0.4)' }}>More interpretation.</p>
-              </div>
-
-              <p className="my-12" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
-                SYGNS removes.
-              </p>
-
-              <p className="mb-12" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-                It subtracts until the structure appears.
-              </p>
-
-              <div className="mb-12 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
-                <p>Not prophecy.</p>
-                <p>Not therapy.</p>
-              </div>
-
-              <p className="mb-16" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
-                Simply <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>personalized observation</strong>. An analytical layer between instinct and action.
-              </p>
-
-              {/* Modules */}
-              <div className="space-y-6">
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Daily Focus</strong>
-                  <br />
-                  <span>Identifies what requires your attention right now.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Oracle</strong>
-                  <br />
-                  <span>Reveals the blind spots through tarot: both traditionally and in a completely modern way.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Andromeda</strong>
-                  <br />
-                  <span>Measures tension and alignment between people.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Crossroads</strong>
-                  <br />
-                  <span>Separates signal from emotional interference when you're feeling stuck.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Numbers</strong>
-                  <br />
-                  <span>Maps recurring life architecture.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Chinese Zodiac</strong>
-                  <br />
-                  <span>Defines behavioral defaults.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Stars</strong>
-                  <br />
-                  <span>Positions identity within larger archetypal systems.</span>
-                </p>
-                <p>
-                  <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>Morpheus</strong>
-                  <br />
-                  <span>Translates subconscious imagery into usable insight by helping you interpret your dreams.</span>
-                </p>
-              </div>
             </div>
 
             {/* Image Carousel */}
@@ -242,85 +172,13 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true, amount: 0.1 }}
-              className="mt-12 sm:mt-20 w-full"
+              className="mt-4 sm:mt-6 w-full"
             >
               <ImageCarousel />
             </motion.div>
           </motion.div>
         </section>
 
-        {/* Echo Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            className="text-center max-w-4xl"
-          >
-            {/* Banner */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true, amount: 0.1 }}
-              className="mb-10"
-            >
-              <img
-                src="/images/echo-banner.png"
-                alt="Echo"
-                className="w-full max-w-md mx-auto"
-                style={{ opacity: 0.9 }}
-              />
-            </motion.div>
-
-            {/* Echo Text */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: 300,
-                fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
-                lineHeight: '1.9',
-                letterSpacing: '0.02em',
-              }}
-            >
-              <p className="mb-10" style={{ fontSize: 'clamp(1.125rem, 3.5vw, 1.5rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400, letterSpacing: '-0.01em' }}>
-                <strong style={{ fontWeight: 500 }}>Echo</strong> is the adaptive memory infrastructure.
-              </p>
-
-              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.55)' }}>
-                <p>It tracks behavior.</p>
-                <p>Learns rhythm.</p>
-                <p>Recognizes recurrence.</p>
-              </div>
-
-              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
-                Then it returns the signal at the <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.95)' }}>precise moment</strong> it matters.
-              </p>
-
-              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
-                <p>Not reactive.</p>
-                <p>Not random.</p>
-              </div>
-
-              <p className="mb-10" style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'rgba(255, 255, 255, 0.95)', fontWeight: 400 }}>
-                Echo is what makes the system <strong style={{ fontWeight: 500 }}>aware</strong>.
-              </p>
-
-              <p className="mb-10" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-                It is the layer that connects everything together.
-              </p>
-
-              <p style={{ color: 'rgba(255, 255, 255, 0.55)' }}>
-                Give it <strong style={{ fontWeight: 500, color: 'rgba(255, 255, 255, 0.85)' }}>one week</strong>. That's all Echo needs to begin recognizing your patterns.
-              </p>
-            </motion.div>
-          </motion.div>
-        </section>
 
         {/* Section 3: Module Grid */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
@@ -439,35 +297,7 @@ export default function App() {
           </motion.div>
         </section>
 
-        {/* Section 5: Pricing */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            className="w-full max-w-7xl"
-          >
-            {/* Headline */}
-            <h2
-              className="mb-16 text-center px-4"
-              style={{
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: 300,
-                fontSize: 'clamp(1.75rem, 5vw, 3rem)',
-                lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
-                letterSpacing: '-0.02em',
-              }}
-            >
-              Activate Your System
-            </h2>
-
-            <PricingCards />
-          </motion.div>
-        </section>
-
-        {/* Section 6: Get Your Deck */}
+        {/* Section 5: Get Your Deck */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
             initial={{ opacity: 0 }}
@@ -555,6 +385,34 @@ export default function App() {
           </motion.div>
         </section>
 
+        {/* Section 6: Pricing */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="w-full max-w-7xl"
+          >
+            {/* Headline */}
+            <h2
+              className="mb-16 text-center px-4"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: 300,
+                fontSize: 'clamp(1.75rem, 5vw, 3rem)',
+                lineHeight: '1.3',
+                color: 'rgba(255, 255, 255, 0.95)',
+                letterSpacing: '-0.02em',
+              }}
+            >
+              Activate Your System
+            </h2>
+
+            <PricingCards />
+          </motion.div>
+        </section>
+
         {/* Section 7: Final CTA */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-32">
           <motion.div
@@ -576,7 +434,7 @@ export default function App() {
                 letterSpacing: '-0.02em',
               }}
             >
-              The system is here
+              Read the signal
             </h2>
 
             {/* Logo */}

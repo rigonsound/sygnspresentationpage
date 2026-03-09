@@ -91,10 +91,10 @@ export function PricingCards() {
             <div
               className="text-center mb-2"
               style={{
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: 600,
+                fontFamily: (tier.name === 'Gold' || tier.name === 'Diamond') ? 'Cinzel, serif' : 'Inter, sans-serif',
+                fontWeight: (tier.name === 'Gold' || tier.name === 'Diamond') ? 400 : 600,
                 fontSize: '2rem',
-                letterSpacing: '-0.03em',
+                letterSpacing: (tier.name === 'Gold' || tier.name === 'Diamond') ? '0.05em' : '-0.03em',
                 color: tier.titleColor,
                 lineHeight: '1',
               }}
