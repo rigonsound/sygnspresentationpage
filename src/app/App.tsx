@@ -15,6 +15,57 @@ export default function App() {
 
       {/* Content */}
       <div className="relative z-10">
+
+        {/* Header */}
+        <header
+          className="fixed top-0 left-0 right-0 z-50 flex items-center justify-end px-6 sm:px-10"
+          style={{
+            height: '48px',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, transparent 100%)',
+          }}
+        >
+          <nav className="flex items-center gap-6 sm:gap-8">
+            <a
+              href="https://denmarkandwinter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '0.7rem',
+                fontWeight: 400,
+                letterSpacing: '0.12em',
+                color: 'rgba(255,255,255,0.4)',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}
+            >
+              About
+            </a>
+            <a
+              href="https://legal.denmarkandwinter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '0.7rem',
+                fontWeight: 400,
+                letterSpacing: '0.12em',
+                color: 'rgba(255,255,255,0.4)',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}
+            >
+              Legal
+            </a>
+          </nav>
+        </header>
+
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-20">
           <motion.div
