@@ -34,7 +34,7 @@ export default function App() {
                 fontSize: '0.7rem',
                 fontWeight: 400,
                 letterSpacing: '0.12em',
-                color: 'rgba(255,255,255,0.4)',
+                color: '#ffffff',
                 textTransform: 'uppercase',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
@@ -53,7 +53,7 @@ export default function App() {
                 fontSize: '0.7rem',
                 fontWeight: 400,
                 letterSpacing: '0.12em',
-                color: 'rgba(255,255,255,0.4)',
+                color: '#ffffff',
                 textTransform: 'uppercase',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
@@ -95,7 +95,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.5rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
@@ -124,7 +124,7 @@ export default function App() {
                     style={{
                       fontSize: '0.65rem',
                       fontWeight: 300,
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: '#ffffff',
                       letterSpacing: '0.02em',
                     }}
                   >
@@ -134,7 +134,7 @@ export default function App() {
                     style={{
                       fontSize: '1.1rem',
                       fontWeight: 500,
-                      color: 'rgba(255, 255, 255, 0.95)',
+                      color: '#ffffff',
                       letterSpacing: '-0.01em',
                       marginTop: '-2px',
                     }}
@@ -164,7 +164,7 @@ export default function App() {
                     style={{
                       fontSize: '0.65rem',
                       fontWeight: 300,
-                      color: 'rgba(255, 255, 255, 0.7)',
+                      color: '#ffffff',
                       letterSpacing: '0.02em',
                     }}
                   >
@@ -174,7 +174,7 @@ export default function App() {
                     style={{
                       fontSize: '1.1rem',
                       fontWeight: 500,
-                      color: 'rgba(255, 255, 255, 0.95)',
+                      color: '#ffffff',
                       letterSpacing: '-0.01em',
                       marginTop: '-2px',
                     }}
@@ -207,7 +207,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
                 lineHeight: '1.9',
-                color: 'rgba(255, 255, 255, 0.55)',
+                color: '#ffffff',
                 letterSpacing: '0.02em',
               }}
             >
@@ -248,7 +248,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
@@ -276,7 +276,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
@@ -291,7 +291,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(0.9375rem, 2.5vw, 1.125rem)',
                 lineHeight: '1.9',
-                color: 'rgba(255, 255, 255, 0.55)',
+                color: '#ffffff',
                 letterSpacing: '0.02em',
               }}
             >
@@ -307,7 +307,7 @@ export default function App() {
                 You open it when something feels off, or when something feels important. You engage with what's relevant. Then you close it and get on with your day.
               </p>
 
-              <div className="mb-10 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.45)', fontStyle: 'italic' }}>
+              <div className="mb-10 space-y-1" style={{                 color: '#ffffff', fontStyle: 'italic' }}>
                 <p>No streaks to protect.</p>
                 <p>No reminders pulling at you.</p>
                 <p>No gamified reward for showing up.</p>
@@ -365,7 +365,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
@@ -400,7 +400,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: '1.125rem',
                 lineHeight: '1.8',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: '#ffffff',
                 letterSpacing: '0.02em',
               }}
             >
@@ -453,7 +453,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
@@ -481,7 +481,7 @@ export default function App() {
                 fontWeight: 300,
                 fontSize: 'clamp(1.75rem, 5vw, 3rem)',
                 lineHeight: '1.3',
-                color: 'rgba(255, 255, 255, 0.95)',
+                color: '#ffffff',
                 letterSpacing: '-0.02em',
               }}
             >
